@@ -33,8 +33,8 @@ export default {
     return {
       // 这是登陆表单的数据绑定对象
       loginForm: {
-        userName: 'zs',
-        password: '123'
+        userName: 'thc',
+        password: '123456'
       },
       // 表单的验证规则对象
       loginFormRules: {

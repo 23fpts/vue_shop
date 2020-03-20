@@ -8,6 +8,12 @@ import axios from 'axios'
 // 导入axios
 // 配置请求的根路径
 axios.defaults.baseURL = 'http://localhost:8080/'
+axios.interceptors.request.use(config => {
+  console.log(config)
+  // config.headers.admin = window.sessionStorage.getItem('token')
+  // 在最后必须 return config
+  return config
+})
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
